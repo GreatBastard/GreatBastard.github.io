@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Great Bastard&#39;s blog</title>
+  
+  <subtitle>姬某人的小站</subtitle>
+  <link href="http://greatbastard.space/atom.xml" rel="self"/>
+  
+  <link href="http://greatbastard.space/"/>
+  <updated>2022-01-25T12:47:05.413Z</updated>
+  <id>http://greatbastard.space/</id>
+  
+  <author>
+    <name>GreatBastard</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test_my_site</title>
+    <link href="http://greatbastard.space/uncategorized/test-my-site/"/>
+    <id>http://greatbastard.space/uncategorized/test-my-site/</id>
+    <published>2022-01-25T12:47:05.000Z</published>
+    <updated>2022-01-25T12:47:05.413Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://greatbastard.space/uncategorized/hello-world/"/>
+    <id>http://greatbastard.space/uncategorized/hello-world/</id>
+    <published>2022-01-25T12:34:42.709Z</published>
+    <updated>2022-01-25T12:34:42.709Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
