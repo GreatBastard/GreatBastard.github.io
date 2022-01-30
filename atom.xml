@@ -6,7 +6,7 @@
   <link href="http://greatbastard.space/atom.xml" rel="self"/>
   
   <link href="http://greatbastard.space/"/>
-  <updated>2022-01-25T12:47:05.413Z</updated>
+  <updated>2022-01-25T12:34:42.709Z</updated>
   <id>http://greatbastard.space/</id>
   
   <author>
@@ -15,19 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>test_my_site</title>
-    <link href="http://greatbastard.space/uncategorized/test-my-site/"/>
-    <id>http://greatbastard.space/uncategorized/test-my-site/</id>
-    <published>2022-01-25T12:47:05.000Z</published>
-    <updated>2022-01-25T12:47:05.413Z</updated>
-    
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>Hello World</title>
