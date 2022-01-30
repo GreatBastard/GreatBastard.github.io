@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Great Bastard&#39;s blog</title>
+  <title>title</title>
   
-  <subtitle>姬某人的小站</subtitle>
+  <subtitle>subtitle</subtitle>
   <link href="http://greatbastard.space/atom.xml" rel="self"/>
   
   <link href="http://greatbastard.space/"/>
