@@ -176,53 +176,15 @@ function panguInit () {
 
 document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>(()=>{
   const init = () => {
-  twikoo.init(Object.assign({
-    el: '#twikoo-wrap',
-    envId: 'jzn-9g39xo46e5819247',
-    region: '',
-    onCommentLoaded: function () {
-      if(typeof window.mediumZoom!='undefined'){
-        const zoomComment = mediumZoom(document.querySelectorAll('.tk-content :not(a)>img'))
-        zoomComment.on('open', e => {
-          const photoBg = document.documentElement.getAttribute('data-theme') === 'dark' ? '#121212' : '#fff'
-          zoomComment.update({
-            background: photoBg
-          })
-        })
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'jzn-9g39xo46e5819247',
+      region: '',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.vemoji)'))
       }
-      if(GLOBAL_CONFIG.lightbox === 'fancybox'){
-          const addFancybox = function (ele) {
-            const runFancybox = (ele) => {
-              ele.each(function (i, o) {
-                const $this = $(o)
-                const lazyloadSrc = $this.attr('data-lazy-src') || $this.attr('src')
-                const dataCaption = $this.attr('alt') || ''
-                $this.wrap(`<a href="${lazyloadSrc}" data-fancybox="group" data-caption="${dataCaption}" class="fancybox"></a>`)
-              })
-
-              $().fancybox({
-                selector: '[data-fancybox]',
-                loop: true,
-                transitionEffect: 'slide',
-                protect: true,
-                buttons: ['slideShow', 'fullScreen', 'thumbs', 'close'],
-                hash: false
-              })
-            }
-
-            if (typeof $.fancybox === 'undefined') {
-              $('head').append(`<link rel="stylesheet" type="text/css" href="${GLOBAL_CONFIG.source.fancybox.css}">`)
-              $.getScript(`${GLOBAL_CONFIG.source.fancybox.js}`, function () {
-                runFancybox($(ele))
-              })
-            } else {
-              runFancybox($(ele))
-            }
-          }
-        addFancybox(document.querySelectorAll('.tk-content :not(a)>img'))
-      }
-    }
-  }, null))
+    }, null))
+  }
 
   const getCount = () => {
     twikoo.getCommentsCount({
