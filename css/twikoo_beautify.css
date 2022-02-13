@@ -1,3 +1,10 @@
+/* Twikoo评论框高度 */
+.el-textarea__inner {
+  /* min-height: 75px; */
+  /* height: 75px; */
+  min-height: 300px !important;
+}
+
 /* 自定义twikoo评论输入框高度 */
 .tk-input[data-v-619b4c52] .el-textarea__inner {
     height: 230px !important;
