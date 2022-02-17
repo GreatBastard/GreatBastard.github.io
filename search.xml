@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>建站bug记录</title>
+      <link href="/%E7%BD%91%E9%A1%B5%E5%BB%BA%E8%AE%BE/issues/"/>
+      <url>/%E7%BD%91%E9%A1%B5%E5%BB%BA%E8%AE%BE/issues/</url>
+      
+        <content type="html"><![CDATA[<h2 id="目前遇到的bug如下："><a href="#目前遇到的bug如下：" class="headerlink" title="目前遇到的bug如下："></a>目前遇到的bug如下：</h2><h3 id="1-碎碎念界面获取Leancloud数据库失败，一直处于加载中状态"><a href="#1-碎碎念界面获取Leancloud数据库失败，一直处于加载中状态" class="headerlink" title="1.碎碎念界面获取Leancloud数据库失败，一直处于加载中状态"></a>1.碎碎念界面获取Leancloud数据库失败，一直处于加载中状态</h3><p><img src="https://cdn.jsdelivr.net/gh/greatbastard/GreatBastard.github.io/img/bug1.png" alt="Arititalk界面"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网页建设 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 网页建设 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/%E7%BD%91%E9%A1%B5%E5%BB%BA%E8%AE%BE/hello-world/"/>
       <url>/%E7%BD%91%E9%A1%B5%E5%BB%BA%E8%AE%BE/hello-world/</url>
