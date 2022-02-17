@@ -6,7 +6,7 @@
   <link href="http://greatbastard.space/atom.xml" rel="self"/>
   
   <link href="http://greatbastard.space/"/>
-  <updated>2022-02-17T03:58:03.928Z</updated>
+  <updated>2022-02-17T03:59:43.641Z</updated>
   <id>http://greatbastard.space/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://greatbastard.space/%E7%BD%91%E9%A1%B5%E5%BB%BA%E8%AE%BE/issues/"/>
     <id>http://greatbastard.space/%E7%BD%91%E9%A1%B5%E5%BB%BA%E8%AE%BE/issues/</id>
     <published>2022-02-17T03:12:31.000Z</published>
-    <updated>2022-02-17T03:58:03.928Z</updated>
+    <updated>2022-02-17T03:59:43.641Z</updated>
     
     <content type="html"><![CDATA[<h2 id="目前遇到的bug如下："><a href="#目前遇到的bug如下：" class="headerlink" title="目前遇到的bug如下："></a>目前遇到的bug如下：</h2><h3 id="1-碎碎念界面获取Leancloud数据库失败，一直处于加载中状态"><a href="#1-碎碎念界面获取Leancloud数据库失败，一直处于加载中状态" class="headerlink" title="1.碎碎念界面获取Leancloud数据库失败，一直处于加载中状态"></a>1.碎碎念界面获取Leancloud数据库失败，一直处于加载中状态</h3><p><img src="https://cdn.jsdelivr.net/gh/greatbastard/GreatBastard.github.io/img/bug1.png" alt="Arititalk界面"></p><h3 id="2-busuanzi组件有时会发生502-bad-gateaway错误不显示数字，有时数字不真实"><a href="#2-busuanzi组件有时会发生502-bad-gateaway错误不显示数字，有时数字不真实" class="headerlink" title="2.busuanzi组件有时会发生502 bad gateaway错误不显示数字，有时数字不真实"></a>2.busuanzi组件有时会发生502 bad gateaway错误不显示数字，有时数字不真实</h3><p><img src="https://cdn.jsdelivr.net/gh/greatbastard/GreatBastard.github.io/img/bug2_1.png" alt="502错误"></p><p><img src="https://cdn.jsdelivr.net/gh/greatbastard/GreatBastard.github.io/img/bug2_2.png" alt="数字不真实"></p>]]></content>
     
