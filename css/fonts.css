@@ -1,0 +1,20 @@
+@font-face {
+   font-family: 'Hazelnuts';
+   font-display: swap;
+   src:  url('https://websrc.greatbastard.space/fonts/Hazelnuts/Hazelnuts.woff') format('woff'),  /*chrome、firefox */
+         url('https://websrc.greatbastard.space/fonts/Hazelnuts/Hazelnuts.ttf') format('truetype');  /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+
+@font-face {
+   font-family: 'Peak';
+   font-display: swap;
+   src:  url('https://websrc.greatbastard.space/fonts/Peak/Peak.woff') format('woff'),  /*chrome、firefox */
+         url('https://websrc.greatbastard.space/fonts/Peak/Peak.ttf') format('truetype');  /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+
+@font-face {
+   font-family: 'Song';
+   font-display: swap;
+   src:  url('https://websrc.greatbastard.space/fonts/Song/Song.woff') format('woff'),  /*chrome、firefox */
+         url('https://websrc.greatbastard.space/fonts/Song/Song.ttf') format('truetype');  /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}

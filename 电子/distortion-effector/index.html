@@ -1,0 +1,381 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>失真效果器的制作 | Great Bastard's Blog</title><meta name="keywords" content="音乐,电子,乐队,吉他"><meta name="author" content="Great Bastard"><meta name="copyright" content="Great Bastard"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="尝试自制失真效果器，希望以后演出的时候能用上自己亲手做的单块效果器">
+<meta property="og:type" content="article">
+<meta property="og:title" content="失真效果器的制作">
+<meta property="og:url" content="https://greatbastard.space/%E7%94%B5%E5%AD%90/distortion-effector/">
+<meta property="og:site_name" content="Great Bastard&#39;s Blog">
+<meta property="og:description" content="尝试自制失真效果器，希望以后演出的时候能用上自己亲手做的单块效果器">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img.greatbastard.space/Articles/Electronics/Distortion_Effector/cover.png">
+<meta property="article:published_time" content="2022-02-17T15:08:50.000Z">
+<meta property="article:modified_time" content="2022-03-11T09:28:09.300Z">
+<meta property="article:author" content="Great Bastard">
+<meta property="article:tag" content="音乐">
+<meta property="article:tag" content="电子">
+<meta property="article:tag" content="乐队">
+<meta property="article:tag" content="吉他">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img.greatbastard.space/Articles/Electronics/Distortion_Effector/cover.png"><link rel="shortcut icon" href="https://img.greatbastard.space/Basic/favicon.png"><link rel="canonical" href="https://greatbastard.space/%E7%94%B5%E5%AD%90/distortion-effector/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"prismjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'mediumZoom',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isAnchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '失真效果器的制作',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-03-11 17:28:09'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="https://websrc.greatbastard.space/css/main_config.css"><link rel="stylesheet" href="https://websrc.greatbastard.space/css/twikoo_beautify.css"  media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/fonts.css"><link rel="stylesheet" href="/dist/APlayer.min.css"><link rel="stylesheet" href="/css/icon.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.0.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="Great Bastard's Blog" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://img.greatbastard.space/Basic/favicon.png" onerror="onerror=null;src='https://img.greatbastard.space/Pages/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-shenghuo"></use></svg><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-zixun1"></use></svg><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-wenjianjia"></use></svg><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-biaoqian1"></use></svg><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-yiduxinxiang"></use></svg><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/talks/"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-xinxi1"></use></svg><span> 自言自语</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://cloud.greatbastard.space"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-yunpan1"></use></svg><span> 云盘</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-lianjie1"></use></svg><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/%E7%BD%91%E9%A1%B5%E5%BB%BA%E8%AE%BE/about/"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-guanyu"></use></svg><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://img.greatbastard.space/Articles/Electronics/Distortion_Effector/cover.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Great Bastard's Blog</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-shenghuo"></use></svg><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-zixun1"></use></svg><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-wenjianjia"></use></svg><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-biaoqian1"></use></svg><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-yiduxinxiang"></use></svg><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/talks/"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-xinxi1"></use></svg><span> 自言自语</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://cloud.greatbastard.space"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-yunpan1"></use></svg><span> 云盘</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-lianjie1"></use></svg><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/%E7%BD%91%E9%A1%B5%E5%BB%BA%E8%AE%BE/about/"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-guanyu"></use></svg><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">失真效果器的制作</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-02-17T15:08:50.000Z" title="发表于 2022-02-17 23:08:50">2022-02-17</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-03-11T09:28:09.300Z" title="更新于 2022-03-11 17:28:09">2022-03-11</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%94%B5%E5%AD%90/">电子</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">707</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>2分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="失真效果器的制作"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">评论数:</span><a href="/%E7%94%B5%E5%AD%90/distortion-effector/#post-comment"><span id="twikoo-count"></span></a></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="初次尝试"><a href="#初次尝试" class="headerlink" title="初次尝试"></a>初次尝试</h1><p>第一次开始尝试自制效果器还是在去年年底，在CSDN上找到了一个博主自制失真效果器的文章：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_41342525/article/details/105127331">自制电吉他效果器 DIY</a>，便照着文章自己做了一下，电路板焊接还算成功，但是由于本身电路设计就很粗糙，最后测试音色感觉太干，不能拿去实际使用。</p>
+<h2 id="电路图绘制"><a href="#电路图绘制" class="headerlink" title="电路图绘制"></a>电路图绘制</h2><p>采用<strong>Altium Designer</strong>软件，按照那位博主的电路图绘制。</p>
+<p><img src="https://img.greatbastard.space/Articles/Electronics/Distortion_Effector/circuit_1.png" alt="简单失真效果器电路图"></p>
+<h2 id="PCB板绘制"><a href="#PCB板绘制" class="headerlink" title="PCB板绘制"></a>PCB板绘制</h2><p>其中有几个元件在原生库里没有封装，我自己画了封装，当时我还是第一次使用这个软件，过程还是蛮麻烦的。</p>
+<p><img src="https://img.greatbastard.space/Articles/Electronics/Distortion_Effector/PCB_1.png" alt="简单失真效果器PCB板图"></p>
+<h2 id="PCB板打印-amp-元件焊接"><a href="#PCB板打印-amp-元件焊接" class="headerlink" title="PCB板打印&amp;元件焊接"></a>PCB板打印&amp;元件焊接</h2><p>打印PCB板的厂家我选的是嘉立创，速度还行而且价格很便宜(甚至五张不超过10*10cm的样板免费)。</p>
+<p><img src="https://img.greatbastard.space/Articles/Electronics/Distortion_Effector/emptyboard_1.png" alt="简单失真效果器PCB空板"></p>
+<p>由于之前有焊接电路板的经验，焊接过程可以说是轻车熟路，不到两个小时就焊完了并且没出什么差错。</p>
+<p><img src="https://img.greatbastard.space/Articles/Electronics/Distortion_Effector/board_1_1.png" alt="简单失真效果器电路板成品图1"></p>
+<p><img src="https://img.greatbastard.space/Articles/Electronics/Distortion_Effector/board_1_2.png" alt="简单失真效果器电路板成品图2"></p>
+<p>插上电源，接上吉他的时候发现能正常工作，还是蛮开心的。但是音色确实不太行。所以我又萌生了复刻大厂经典效果器的想法。</p>
+<hr>
+<h1 id="BOSS-SD-1-Overdrive的复刻"><a href="#BOSS-SD-1-Overdrive的复刻" class="headerlink" title="BOSS SD-1 Overdrive的复刻"></a>BOSS SD-1 Overdrive的复刻</h1><p>BOSS在效果器行业的地位绝对是毋庸置疑的，并且发布于1981年的SD-1 Overdrive一直以来销量都很高，网络上也能找到现成的电路图，所以我选择先复刻这款经典效果器。</p>
+<h2 id="电路图绘制-1"><a href="#电路图绘制-1" class="headerlink" title="电路图绘制"></a>电路图绘制</h2><p><img src="https://img.greatbastard.space/Articles/Electronics/Distortion_Effector/circuit_2.png" alt="BOSS SD-1 Overdrive电路图"></p>
+<h2 id="PCB板绘制-1"><a href="#PCB板绘制-1" class="headerlink" title="PCB板绘制"></a>PCB板绘制</h2><p>之前第一次尝试画PCB板的时候有很多设计得不好的地方，这次我逐一做了改进。</p>
+<h3 id="元件分层设计"><a href="#元件分层设计" class="headerlink" title="元件分层设计"></a>元件分层设计</h3><p>这次在元件的分布上我采用了双层设计，除发光二极管以外的贴片元件都放在了bottom layer，直插元件都放在了top layer，这样更方便焊接，也能缩小板子的面积，给top overlay层留出更大的空间印图案。</p>
+<h3 id="电源、输入输出接口位置调整"><a href="#电源、输入输出接口位置调整" class="headerlink" title="电源、输入输出接口位置调整"></a>电源、输入输出接口位置调整</h3><p>上次我画的电源接口的位置属实下饭，离板子边缘还有不小距离，导致没办法设计装壳。于是这次我专门等元件都到货之后再开始画封装和PCB板，量好各个元件的尺寸后将电源、输入输出接口的位置都调整到了板子边缘，方便装壳。</p>
+<h3 id="最终效果"><a href="#最终效果" class="headerlink" title="最终效果"></a>最终效果</h3><p><img src="https://img.greatbastard.space/Articles/Electronics/Distortion_Effector/PCB_2_top.png" alt="BOSS SD-1 Overdrive PCB Diagram Top Layer"></p>
+<p><img src="https://img.greatbastard.space/Articles/Electronics/Distortion_Effector/PCB_2_bottom.png" alt="BOSS SD-1 Overdrive PCB Diagram Bottom Layer"></p>
+<h2 id="PCB板打印-amp-元件焊接-1"><a href="#PCB板打印-amp-元件焊接-1" class="headerlink" title="PCB板打印&amp;元件焊接"></a>PCB板打印&amp;元件焊接</h2><p>依旧嘉立创(免费打样+包邮，着实令人感动)。</p>
+<p><img src="https://img.greatbastard.space/Articles/Electronics/Distortion_Effector/emptyboard_2_top.png" alt="BOSS SD-1 Overdrive PCB实物Top Layer"></p>
+<p><img src="https://img.greatbastard.space/Articles/Electronics/Distortion_Effector/emptyboard_2_bottom.png" alt="BOSS SD-1 Overdrive PCB实物Bottom Layer"></p>
+<hr>
+<h1 id="暂停说明"><a href="#暂停说明" class="headerlink" title="暂停说明"></a>暂停说明</h1><p>最近这段时间一直在忙网页建设的事，板子到手后只焊了十个电阻，等我把bug改完就会继续开焊喽，到时候再继续更新这篇文章。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Great Bastard</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://greatbastard.space/%E7%94%B5%E5%AD%90/distortion-effector/">https://greatbastard.space/%E7%94%B5%E5%AD%90/distortion-effector/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://greatbastard.space" target="_blank">Great Bastard's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E9%9F%B3%E4%B9%90/">音乐</a><a class="post-meta__tags" href="/tags/%E7%94%B5%E5%AD%90/">电子</a><a class="post-meta__tags" href="/tags/%E4%B9%90%E9%98%9F/">乐队</a><a class="post-meta__tags" href="/tags/%E5%90%89%E4%BB%96/">吉他</a></div><div class="post_share"><div class="social-share" data-image="https://img.greatbastard.space/Articles/Electronics/Distortion_Effector/cover.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/%E7%BD%91%E9%A1%B5%E5%BB%BA%E8%AE%BE/cloud-drive/"><img class="prev-cover" src="https://img.greatbastard.space/Articles/Web/Cloud_Drive/cloud_drive.png" onerror="onerror=null;src='https://img.greatbastard.space/Pages/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">个人云盘网页开放公告</div></div></a></div><div class="next-post pull-right"><a href="/%E7%BD%91%E9%A1%B5%E5%BB%BA%E8%AE%BE/about/"><img class="next-cover" src="https://img.greatbastard.space/Pages/about.jpg" onerror="onerror=null;src='https://img.greatbastard.space/Pages/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">关于本站/本人</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/%E9%9F%B3%E4%B9%90/euphoria/" title="ichika-Euphoria 吉他cover"><img class="cover" src="https://img.greatbastard.space/Articles/Music/Euphoria/cover.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-07-29</div><div class="title">ichika-Euphoria 吉他cover</div></div></a></div><div><a href="/%E9%9F%B3%E4%B9%90/graduate-songs/" title="New Boy & 干杯"><img class="cover" src="https://img.greatbastard.space/Articles/Music/Graduate_Songs/cover.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-07-09</div><div class="title">New Boy & 干杯</div></div></a></div><div><a href="/%E9%9F%B3%E4%B9%90/gui-cover/" title="草东没有派对-鬼 吉他Cover"><img class="cover" src="https://img.greatbastard.space/Articles/Music/Gui_Cover/cover.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-07-22</div><div class="title">草东没有派对-鬼 吉他Cover</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://img.greatbastard.space/Basic/favicon.png" onerror="this.onerror=null;this.src='https://img.greatbastard.space/Pages/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Great Bastard</div><div class="author-info__description">姬某人</div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://img.greatbastard.space/Basic/wechat.jpg"><i class="fab fa-weixin"></i><span>Text Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/GreatBastard" target="_blank" title="Github"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-github"></use></svg></a><a class="social-icon" href="mailto:greatbastard@outlook.com" target="_blank" title="Email"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-youxiang"></use></svg></a><a class="social-icon" href="https://img.greatbastard.space/Basic/wechat.jpg" target="_blank" title="Wechat"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-wechat"></use></svg></a><a class="social-icon" href="https://img.greatbastard.space/Basic/qq.jpg" target="_blank" title="QQ"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-qq"></use></svg></a><a class="social-icon" href="https://space.bilibili.com/628949212" target="_blank" title="Bilibili"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-bilibili"></use></svg></a><a class="social-icon" href="https://www.zhihu.com/people/au-revior-54" target="_blank" title="Zhihu"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-zhihu"></use></svg></a><a class="social-icon" href="https://steamcommunity.com/profiles/76561198341512249" target="_blank" title="Steam"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-steam"></use></svg></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">欢迎来到姬某人的小站</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%9D%E6%AC%A1%E5%B0%9D%E8%AF%95"><span class="toc-number">1.</span> <span class="toc-text">初次尝试</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%B5%E8%B7%AF%E5%9B%BE%E7%BB%98%E5%88%B6"><span class="toc-number">1.1.</span> <span class="toc-text">电路图绘制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PCB%E6%9D%BF%E7%BB%98%E5%88%B6"><span class="toc-number">1.2.</span> <span class="toc-text">PCB板绘制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PCB%E6%9D%BF%E6%89%93%E5%8D%B0-amp-%E5%85%83%E4%BB%B6%E7%84%8A%E6%8E%A5"><span class="toc-number">1.3.</span> <span class="toc-text">PCB板打印&amp;元件焊接</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#BOSS-SD-1-Overdrive%E7%9A%84%E5%A4%8D%E5%88%BB"><span class="toc-number">2.</span> <span class="toc-text">BOSS SD-1 Overdrive的复刻</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%B5%E8%B7%AF%E5%9B%BE%E7%BB%98%E5%88%B6-1"><span class="toc-number">2.1.</span> <span class="toc-text">电路图绘制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PCB%E6%9D%BF%E7%BB%98%E5%88%B6-1"><span class="toc-number">2.2.</span> <span class="toc-text">PCB板绘制</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%83%E4%BB%B6%E5%88%86%E5%B1%82%E8%AE%BE%E8%AE%A1"><span class="toc-number">2.2.1.</span> <span class="toc-text">元件分层设计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%B5%E6%BA%90%E3%80%81%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E6%8E%A5%E5%8F%A3%E4%BD%8D%E7%BD%AE%E8%B0%83%E6%95%B4"><span class="toc-number">2.2.2.</span> <span class="toc-text">电源、输入输出接口位置调整</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%80%E7%BB%88%E6%95%88%E6%9E%9C"><span class="toc-number">2.2.3.</span> <span class="toc-text">最终效果</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PCB%E6%9D%BF%E6%89%93%E5%8D%B0-amp-%E5%85%83%E4%BB%B6%E7%84%8A%E6%8E%A5-1"><span class="toc-number">2.3.</span> <span class="toc-text">PCB板打印&amp;元件焊接</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9A%82%E5%81%9C%E8%AF%B4%E6%98%8E"><span class="toc-number">3.</span> <span class="toc-text">暂停说明</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/%E9%9F%B3%E4%B9%90/euphoria/" title="ichika-Euphoria 吉他cover"><img src="https://img.greatbastard.space/Articles/Music/Euphoria/cover.png" onerror="this.onerror=null;this.src='https://img.greatbastard.space/Pages/404.jpg'" alt="ichika-Euphoria 吉他cover"/></a><div class="content"><a class="title" href="/%E9%9F%B3%E4%B9%90/euphoria/" title="ichika-Euphoria 吉他cover">ichika-Euphoria 吉他cover</a><time datetime="2022-07-29T04:19:55.000Z" title="发表于 2022-07-29 12:19:55">2022-07-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/%E9%9F%B3%E4%B9%90/gui-cover/" title="草东没有派对-鬼 吉他Cover"><img src="https://img.greatbastard.space/Articles/Music/Gui_Cover/cover.png" onerror="this.onerror=null;this.src='https://img.greatbastard.space/Pages/404.jpg'" alt="草东没有派对-鬼 吉他Cover"/></a><div class="content"><a class="title" href="/%E9%9F%B3%E4%B9%90/gui-cover/" title="草东没有派对-鬼 吉他Cover">草东没有派对-鬼 吉他Cover</a><time datetime="2022-07-22T09:55:05.000Z" title="发表于 2022-07-22 17:55:05">2022-07-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/%E9%9F%B3%E4%B9%90/graduate-songs/" title="New Boy &amp; 干杯"><img src="https://img.greatbastard.space/Articles/Music/Graduate_Songs/cover.png" onerror="this.onerror=null;this.src='https://img.greatbastard.space/Pages/404.jpg'" alt="New Boy &amp; 干杯"/></a><div class="content"><a class="title" href="/%E9%9F%B3%E4%B9%90/graduate-songs/" title="New Boy &amp; 干杯">New Boy &amp; 干杯</a><time datetime="2022-07-09T10:41:02.000Z" title="发表于 2022-07-09 18:41:02">2022-07-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/%E6%9D%82/subtitle/" title="首页句子"><img src="https://img.greatbastard.space/Articles/Other/Subtitle/subtitle.jpg" onerror="this.onerror=null;this.src='https://img.greatbastard.space/Pages/404.jpg'" alt="首页句子"/></a><div class="content"><a class="title" href="/%E6%9D%82/subtitle/" title="首页句子">首页句子</a><time datetime="2022-03-18T09:09:34.000Z" title="发表于 2022-03-18 17:09:34">2022-03-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/%E7%BD%91%E9%A1%B5%E5%BB%BA%E8%AE%BE/cloud-drive/" title="个人云盘网页开放公告"><img src="https://img.greatbastard.space/Articles/Web/Cloud_Drive/cloud_drive.png" onerror="this.onerror=null;this.src='https://img.greatbastard.space/Pages/404.jpg'" alt="个人云盘网页开放公告"/></a><div class="content"><a class="title" href="/%E7%BD%91%E9%A1%B5%E5%BB%BA%E8%AE%BE/cloud-drive/" title="个人云盘网页开放公告">个人云盘网页开放公告</a><time datetime="2022-03-17T15:47:26.000Z" title="发表于 2022-03-17 23:47:26">2022-03-17</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2023 By Great Bastard</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a><br>
+<img src="https://img.greatbastard.space/Basic/emblem.png">
+<a href="https://beian.miit.gov.cn/" target="_blank">京ICP备2022005783号</a>
+<br>
+<a target="_blank" rel="noopener" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"><img src="https://img.greatbastard.space/Basic/upyun.png"align="absmiddle" width="59px" height="30px" /></a>
+<span>提供加速服务</span></div><div class="footer_custom_text"> 欢迎来到姬某人的小站!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">本地搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="https://websrc.greatbastard.space/js/utils.js"></script><script src="https://websrc.greatbastard.space/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.2
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        insertScript: [200, () => {
+          document.querySelectorAll('mjx-container:not\([display]\)').forEach(node => {
+            const target = node.parentNode
+            if (target.nodeName.toLowerCase() === 'li') {
+              target.parentNode.classList.add('has-jax')
+            } else {
+              target.classList.add('has-jax')
+            }
+          });
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'jzn-9g39xo46e5819247',
+      region: '',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.vemoji)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    twikoo.getCommentsCount({
+      envId: 'jzn-9g39xo46e5819247',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      document.getElementById('twikoo-count').innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    GLOBAL_CONFIG_SITE.isPost && getCount()
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://lib.baomitu.com/twikoo/latest/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !false) {
+    if (false) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script></div><script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script><script src="https://cdn.bootcdn.net/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script><script defer src="https://websrc.greatbastard.space/js/fishes.js"></script><script src="https://websrc.greatbastard.space/js/HideChildCategory.js"></script><div id="aplayer"></div><script type="text/javascript" src="/dist/APlayer.min.js"></script><script type="text/javascript" src="/dist/music.js"></script><script type="text/javascript" src="/js/iconfont.js"></script><script src="//at.alicdn.com/t/font_3167432_znmzfam3bhb.js"></script><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/fireworks.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = true;
+document.body.addEventListener('input', POWERMODE);
+</script><script src="//code.tidio.co/fnvn2qch0ykmzefn6mcbe7232kt6kcpl.js" async="async"></script><script>function onTidioChatApiReady() {
+  window.tidioChatApi.hide();
+  window.tidioChatApi.on("close", function() {
+    window.tidioChatApi.hide();
+  });
+}
+if (window.tidioChatApi) {
+  window.tidioChatApi.on("ready", onTidioChatApiReady);
+} else {
+  document.addEventListener("tidioChat-ready", onTidioChatApiReady);
+}
+
+var chatBtnFn = () => {
+  document.getElementById("chat_btn").addEventListener("click", function(){
+    window.tidioChatApi.show();
+    window.tidioChatApi.open();
+  });
+}
+chatBtnFn()
+</script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><!-- hexo injector body_end end --></body></html>
