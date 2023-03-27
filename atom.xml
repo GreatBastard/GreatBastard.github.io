@@ -113,27 +113,6 @@
   </entry>
   
   <entry>
-    <title>个人云盘网页开放公告</title>
-    <link href="https://greatbastard.space/%E7%BD%91%E9%A1%B5%E5%BB%BA%E8%AE%BE/cloud-drive/"/>
-    <id>https://greatbastard.space/%E7%BD%91%E9%A1%B5%E5%BB%BA%E8%AE%BE/cloud-drive/</id>
-    <published>2022-03-17T15:47:26.000Z</published>
-    <updated>2022-07-10T05:01:48.067Z</updated>
-    
-    <content type="html"><![CDATA[<p>最近把自己的个人云盘挂载到了网页上，使用了Alist插件和服务器宝塔面板的反向代理，代理到了ip地址的5244端口：<a href="http://101.43.231.47:5244">http://101.43.231.47:5244</a></p><p>域名是 <a href="https://cloud.greatbastard.space">https://cloud.greatbastard.space</a> : <a href="https://cloud.greatbastard.space">姬某人的云盘</a></p><p>目前挂载了阿里云盘和又拍云存储，阿里云盘上目前有一些自己的录音作品和一些电影，可以在线播放也可以下载；又拍云存储目前上有我的网页在线音乐播放器的音频、歌词和专辑封面资源</p><p>后续还会更新资源和其他云盘</p>]]></content>
-    
-    
-    <summary type="html">个人云盘挂载到网页</summary>
-    
-    
-    
-    <category term="网页建设" scheme="https://greatbastard.space/categories/%E7%BD%91%E9%A1%B5%E5%BB%BA%E8%AE%BE/"/>
-    
-    
-    <category term="网页建设" scheme="https://greatbastard.space/tags/%E7%BD%91%E9%A1%B5%E5%BB%BA%E8%AE%BE/"/>
-    
-  </entry>
-  
-  <entry>
     <title>失真效果器的制作</title>
     <link href="https://greatbastard.space/%E7%94%B5%E5%AD%90/distortion-effector/"/>
     <id>https://greatbastard.space/%E7%94%B5%E5%AD%90/distortion-effector/</id>
