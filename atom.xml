@@ -6,7 +6,7 @@
   <link href="https://greatbastard.space/atom.xml" rel="self"/>
   
   <link href="https://greatbastard.space/"/>
-  <updated>2023-05-13T10:28:51.017Z</updated>
+  <updated>2023-03-27T15:01:31.182Z</updated>
   <id>https://greatbastard.space/</id>
   
   <author>
@@ -15,44 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>page</title>
-    <link href="https://greatbastard.space/uncategorized/page/"/>
-    <id>https://greatbastard.space/uncategorized/page/</id>
-    <published>2023-05-13T10:11:30.000Z</published>
-    <updated>2023-05-13T10:28:51.017Z</updated>
-    
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://greatbastard.space/uncategorized/page/chord/"/>
-    <id>https://greatbastard.space/uncategorized/page/chord/</id>
-    <published>2023-05-13T10:08:26.413Z</published>
-    <updated>2023-05-13T10:08:30.898Z</updated>
-    
-    <content type="html"><![CDATA[import React from 'react'import ReactDOM from 'react-dom'import Chord from '@tombatossals/react-chords/lib/Chord'const MyChord = () =&gt; {    const chord = {        frets: [1, 3, 3, 2, 1, 1],        fingers: [1, 3, 4, 2, 1, 1],        barres: [1],        capo: false,    }    const instrument = {        strings: 6,        fretsOnChord: 4,        name: 'Guitar',        keys: [],        tunings: {            standard: ['E', 'A', 'D', 'G', 'B', 'E']        }    }    const lite = false // defaults to false if omitted    return (        <chord chord="{chord}" instrument="{instrument}" lite="{lite}">    )}ReactDOM.render(  <mychord>,  document.getElementById('root'));</mychord></chord>]]></content>
-    
-    
-      
-      
-    <summary type="html">import React from &#39;react&#39;
-import ReactDOM from &#39;react-dom&#39;
-
-import Chord from &#39;@tombatossals/react-chords/lib/Chord&#39;
-
-const MyChord = () =&amp;g</summary>
-      
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>ichika-Euphoria 吉他cover</title>
