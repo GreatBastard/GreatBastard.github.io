@@ -4,25 +4,6 @@
   
     
     <entry>
-      <title>Data Communications and Networking</title>
-      <link href="/Scholar/chapter1/"/>
-      <url>/Scholar/chapter1/</url>
-      
-        <content type="html"><![CDATA[<h2 id="Chapter-1-Introduction"><a href="#Chapter-1-Introduction" class="headerlink" title="Chapter 1 : Introduction"></a>Chapter 1 : Introduction</h2><h3 id="1-1-Data-Communications"><a href="#1-1-Data-Communications" class="headerlink" title="1.1 Data Communications"></a>1.1 Data Communications</h3><h4 id="1-1-1-Components"><a href="#1-1-1-Components" class="headerlink" title="1.1.1 Components"></a>1.1.1 Components</h4><p>Five components of data communication:Message, Sender, Receiver, Medium, Protocol<br><img src="Scholar/Chapter1/1.png" alt="Five components of data communication"></p><h4 id="1-1-3-Data-Flow"><a href="#1-1-3-Data-Flow" class="headerlink" title="1.1.3 Data Flow"></a>1.1.3 Data Flow</h4><p>Communication between two devices can be simplex, half-duplex, or full-duplex.<br><img src="Scholar/Chapter1/2.png" alt="Data Flow"></p><h3 id="1-2-Networks"><a href="#1-2-Networks" class="headerlink" title="1.2 Networks"></a>1.2 Networks</h3><h4 id="1-2-2-Physical-Structures"><a href="#1-2-2-Physical-Structures" class="headerlink" title="1.2.2 Physical Structures"></a>1.2.2 Physical Structures</h4><p><strong><em>Physical Topology</em></strong><br><strong><em>Mesh Topology</em></strong><br>In a mesh topology, every device has a dedicated point-to-point link to every other device. We need $n (n – 1) / 2$ duplex-mode links, every device on the network must have $n – 1$ I/O ports to be connected.<br><img src="Scholar/Chapter1/3.png" alt="Mesh Topology"><br><strong><em>Star Topology</em></strong><br>In a star topology, each device has a dedicated point-to-point link only to a central controller, usually called a hub.<br><img src="Scholar/Chapter1/4.png" alt="Star Topology"><br><strong><em>Bus Topology</em></strong><br>One long cable acts as a backbone to link all the devices in a network.<br><img src="Scholar/Chapter1/5.png" alt="Bus Topology"><br><strong><em>Ring Topology</em></strong><br>In a ring topology, each device has a dedicated point-to-point connection with only the two devices on either side of it. A signal is passed along the ring in one direction, from device to device, until it reaches its destination.<br><img src="Scholar/Chapter1/6.png" alt="Ring Topology"></p><h3 id="1-3-Network-Types"><a href="#1-3-Network-Types" class="headerlink" title="1.3 Network Types"></a>1.3 Network Types</h3><p>Two types: local area network (LAN) and wide area network(WAN)</p><p>Formula test:</p><script type="math/tex; mode=display">\frac1{2\pi j}\oint_{\mathcal{C}}\frac{f(z)}{g(z)}\:dz=\frac1{2\pi j}\oint_{\mathcal{C}}\left[\sum_{i=1}^n\frac{A_i}{z-z_i}\right]\:dz=\sum_{i=1}^n\frac1{2\pi j}\oint_{\mathcal{C}}\frac{A_i}{z-z_i}\:dz=\sum_{i=1}^nA_i</script>]]></content>
-      
-      
-      <categories>
-          
-          <category> Scholar </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>ichika-Euphoria 吉他cover</title>
       <link href="/%E9%9F%B3%E4%B9%90/euphoria/"/>
       <url>/%E9%9F%B3%E4%B9%90/euphoria/</url>
